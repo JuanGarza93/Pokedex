@@ -1,0 +1,30 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+  left: 2%;
+  width: 96%;
+  height: 50px;
+  background: linear-gradient(135deg , red 75%, orange 25%);
+}
+
+.title_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title_left > p {
+  font-size: 28px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.pokeball {
+  border-radius: 100%;
+  display: flex;
+  padding-right: 30px;
+}

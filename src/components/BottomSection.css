@@ -1,0 +1,22 @@
+.bottom {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 96%;
+  left: 2%;
+  background: black;
+  align-items: center;
+  justify-content: flex-end;
+  grid-template: 30px;
+  padding-right: 50px;
+}
+
+.bottom-btn {
+  display: flex;
+  grid-template: 15px;
+  cursor: pointer;
+  color: white;
+  padding-left: 20px;
+}
+
