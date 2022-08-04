@@ -28,7 +28,7 @@ const getAllPokemons = async () => {
 
 useEffect(() => {
   getAllPokemons();
-});
+}, []);
 
   return(
     <div className="app-container">
