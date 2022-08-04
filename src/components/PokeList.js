@@ -4,6 +4,7 @@ import PokemonCard from './PokemonCard';
 
 function PokeList() {
 const [allPokemons, setAllPokemons] = useState([]);
+const [hide, setHide] = useState('hidden');
 
 const getAllPokemons = async () => {
   const results = await fetch(
@@ -26,8 +27,9 @@ const getAllPokemons = async () => {
   console.log(allPokemons);
 };
 
-useEffect(() => {
+useEffect(function () {
   getAllPokemons();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 }, []);
 
   return(
@@ -48,7 +50,7 @@ useEffect(() => {
             />
           ))}
         </div>
-
+        <button onClick={() => setHide('default')} className="hidden">{hide}</button>
       </div>
     </div>
   )
